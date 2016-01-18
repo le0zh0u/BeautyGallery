@@ -25,6 +25,28 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+        if segue.identifier == "GoToGallery"{
+            //获取图片名称
+            let imageIndex = beautyPicker.selectedRowInComponent(0)
+            
+            var imageName:String?
+            switch imageIndex {
+                case 0: imageName = "fanbingbing"
+                case 1: imageName = "libingbing"
+                case 2: imageName = "wangfei"
+                case 3: imageName = "yangmi"
+                case 4: imageName = "zhouxu"
+                default: imageName = "nil"
+            }
+            
+            let vc = segue.destinationViewController as! GalleryViewController
+            
+            vc.imageName = imageName
+            
+        }
+    }
 
 
 }

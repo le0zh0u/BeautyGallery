@@ -36,7 +36,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="确定"/>
                                 <connections>
-                                    <segue destination="Ys2-02-1Le" kind="modal" id="cfS-w7-0Tf"/>
+                                    <segue destination="Ys2-02-1Le" kind="modal" identifier="GoToGallery" id="cfS-w7-0Tf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="130.66666666666666" y="330.86000000000001"/>
         </scene>
-        <!--View Controller-->
+        <!--Gallery View Controller-->
         <scene sceneID="0tW-tx-oUK">
             <objects>
-                <viewController id="Ys2-02-1Le" sceneMemberID="viewController">
+                <viewController id="Ys2-02-1Le" customClass="GalleryViewController" customModule="BeautyGallery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F3W-UM-8W6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,6 +65,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="beautyImage" destination="pcF-6F-FND" id="euZ-wQ-Obt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGd-yV-jrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
