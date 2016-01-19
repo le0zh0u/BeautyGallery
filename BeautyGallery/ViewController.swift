@@ -48,6 +48,9 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func close(segue:UIStoryboardSegue){
+        print("close")
+    }
 
 }
 
