@@ -38,7 +38,7 @@ class ViewController: UIViewController {
                 case 2: imageName = "wangfei"
                 case 3: imageName = "yangmi"
                 case 4: imageName = "zhouxu"
-                default: imageName = "nil"
+                default: imageName = nil
             }
             
             let vc = segue.destinationViewController as! GalleryViewController
