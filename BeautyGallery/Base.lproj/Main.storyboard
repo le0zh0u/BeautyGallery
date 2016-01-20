@@ -74,7 +74,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uYi-BN-2eb"/>
+                    <navigationItem key="navigationItem" id="uYi-BN-2eb">
+                        <barButtonItem key="rightBarButtonItem" title="分享" id="47l-VI-W2Y">
+                            <connections>
+                                <action selector="shareTapped:" destination="Ys2-02-1Le" id="upG-sL-B2D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="beautyImage" destination="c48-N6-fiY" id="XvB-NZ-Jfm"/>
                     </connections>

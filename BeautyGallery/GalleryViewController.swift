@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class GalleryViewController:UIViewController {
 
@@ -40,5 +41,14 @@ class GalleryViewController:UIViewController {
     
     override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func shareTapped(sender: AnyObject) {
+        let controller:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        
+        controller.setInitialText("分享测试")
+        controller.addImage(beautyImage.image)
+        self.presentViewController(controller, animated: true, completion: nil)
+        
     }
 }
