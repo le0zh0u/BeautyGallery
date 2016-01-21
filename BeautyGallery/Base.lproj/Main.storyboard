@@ -112,23 +112,50 @@
         <!--韩国-->
         <scene sceneID="eQ8-pz-rjZ">
             <objects>
-                <viewController id="zmW-Ag-i2O" sceneMemberID="viewController">
+                <viewController id="zmW-Ag-i2O" customClass="KoreaViewController" customModule="BeautyGallery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R8a-AI-OJv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="korean" id="5TH-KG-OUe">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dZZ-2t-XU4">
+                                <rect key="frame" x="20" y="464" width="54" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="facebook"/>
+                                <connections>
+                                    <action selector="facebookTapped:" destination="zmW-Ag-i2O" eventType="touchUpInside" id="EIU-3d-KdY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TqJ-Fd-9Ad">
+                                <rect key="frame" x="135" y="464" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="twitter"/>
+                                <connections>
+                                    <action selector="twitterTapped:" destination="zmW-Ag-i2O" eventType="touchUpInside" id="1Pq-Sy-tJr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GVS-UH-mhr">
+                                <rect key="frame" x="248" y="464" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="weibo"/>
+                                <connections>
+                                    <action selector="weiboTapped:" destination="zmW-Ag-i2O" eventType="touchUpInside" id="kZm-na-You"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="korean" id="5TH-KG-OUe">
+                                <rect key="frame" x="20" y="20" width="280" height="436"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="韩国" image="torii" id="D9r-TM-ghZ"/>
+                    <connections>
+                        <outlet property="beautyImage" destination="5TH-KG-OUe" id="OQL-RI-t5z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1R-0P-mdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="1013"/>
+            <point key="canvasLocation" x="102" y="1035"/>
         </scene>
         <!--日本-->
         <scene sceneID="ae4-L6-frq">
@@ -172,11 +199,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="facebook" width="50" height="50"/>
         <image name="fanbingbing" width="320" height="568"/>
         <image name="geisha" width="25" height="25"/>
         <image name="great_wall" width="25" height="25"/>
         <image name="japanese" width="320" height="568"/>
         <image name="korean" width="320" height="568"/>
         <image name="torii" width="25" height="25"/>
+        <image name="twitter" width="50" height="50"/>
+        <image name="weibo" width="50" height="50"/>
     </resources>
 </document>

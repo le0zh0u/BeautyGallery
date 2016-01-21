@@ -15,6 +15,7 @@
 		9040BB3D1C4552AF0097D884 /* BeautyGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040BB3C1C4552AF0097D884 /* BeautyGalleryTests.swift */; };
 		9040BB481C4552AF0097D884 /* BeautyGalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040BB471C4552AF0097D884 /* BeautyGalleryUITests.swift */; };
 		90559ACB1C4D4A2B002844B1 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90559ACA1C4D4A2B002844B1 /* GalleryViewController.swift */; };
+		9063D5031C513C9D00118B25 /* KoreaViewContrlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9063D5021C513C9D00118B25 /* KoreaViewContrlller.swift */; };
 		90F6143B1C4BA67D002C12A3 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6143A1C4BA67D002C12A3 /* ViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		9040BB471C4552AF0097D884 /* BeautyGalleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyGalleryUITests.swift; sourceTree = "<group>"; };
 		9040BB491C4552AF0097D884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90559ACA1C4D4A2B002844B1 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		9063D5021C513C9D00118B25 /* KoreaViewContrlller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KoreaViewContrlller.swift; sourceTree = "<group>"; };
 		90F6143A1C4BA67D002C12A3 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				9040BB2E1C4552AF0097D884 /* Assets.xcassets */,
 				9040BB301C4552AF0097D884 /* LaunchScreen.storyboard */,
 				9040BB331C4552AF0097D884 /* Info.plist */,
+				9063D5021C513C9D00118B25 /* KoreaViewContrlller.swift */,
 			);
 			path = BeautyGallery;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				9040BB2A1C4552AF0097D884 /* ViewController.swift in Sources */,
 				90559ACB1C4D4A2B002844B1 /* GalleryViewController.swift in Sources */,
 				9040BB281C4552AF0097D884 /* AppDelegate.swift in Sources */,
+				9063D5031C513C9D00118B25 /* KoreaViewContrlller.swift in Sources */,
 				90F6143B1C4BA67D002C12A3 /* ViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
