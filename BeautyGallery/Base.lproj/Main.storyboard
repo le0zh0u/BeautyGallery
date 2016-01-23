@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Rpc-IU-mkA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Rpc-IU-mkA">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--女神画廊-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BeautyGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ssk-Ez-n72"/>
+                        <viewControllerLayoutGuide type="bottom" id="rYb-DK-yL0"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女神画廊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vh1-ov-a6a">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="女神画廊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vh1-ov-a6a">
                                 <rect key="frame" x="112" y="20" width="96" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择女神：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="six-V6-iwJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请选择女神：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="six-V6-iwJ">
                                 <rect key="frame" x="20" y="78" width="102" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" id="XvD-8n-hjh">
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XvD-8n-hjh">
                                 <rect key="frame" x="0.0" y="107" width="320" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lxx-Ar-USL">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxx-Ar-USL">
                                 <rect key="frame" x="145" y="331" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="确定"/>
                                 <connections>
                                     <segue destination="Ys2-02-1Le" kind="push" identifier="GoToGallery" id="cfS-w7-0Tf"/>
@@ -55,21 +56,23 @@
         <scene sceneID="0tW-tx-oUK">
             <objects>
                 <viewController id="Ys2-02-1Le" customClass="GalleryViewController" customModule="BeautyGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="htV-Fo-TmF"/>
+                        <viewControllerLayoutGuide type="bottom" id="XyX-nV-5Nd"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="F3W-UM-8W6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ybd-EK-OJV">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybd-EK-OJV">
                                 <rect key="frame" x="28" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="返回"/>
                                 <connections>
                                     <segue destination="I4p-mV-jAn" kind="unwind" unwindAction="close:" id="skr-Oq-k3N"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="fanbingbing" id="c48-N6-fiY">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="fanbingbing" translatesAutoresizingMaskIntoConstraints="NO" id="c48-N6-fiY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -113,40 +116,54 @@
         <scene sceneID="eQ8-pz-rjZ">
             <objects>
                 <viewController id="zmW-Ag-i2O" customClass="KoreaViewController" customModule="BeautyGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SAg-r5-6No"/>
+                        <viewControllerLayoutGuide type="bottom" id="KlJ-YS-3KG"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R8a-AI-OJv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dZZ-2t-XU4">
-                                <rect key="frame" x="20" y="464" width="54" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZZ-2t-XU4">
+                                <rect key="frame" x="16" y="454" width="57" height="50"/>
                                 <state key="normal" backgroundImage="facebook"/>
                                 <connections>
                                     <action selector="facebookTapped:" destination="zmW-Ag-i2O" eventType="touchUpInside" id="EIU-3d-KdY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TqJ-Fd-9Ad">
-                                <rect key="frame" x="135" y="464" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqJ-Fd-9Ad">
+                                <rect key="frame" x="135" y="454" width="50" height="50"/>
                                 <state key="normal" backgroundImage="twitter"/>
                                 <connections>
                                     <action selector="twitterTapped:" destination="zmW-Ag-i2O" eventType="touchUpInside" id="1Pq-Sy-tJr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GVS-UH-mhr">
-                                <rect key="frame" x="248" y="464" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVS-UH-mhr">
+                                <rect key="frame" x="247" y="454" width="50" height="50"/>
                                 <state key="normal" backgroundImage="weibo"/>
                                 <connections>
                                     <action selector="weiboTapped:" destination="zmW-Ag-i2O" eventType="touchUpInside" id="kZm-na-You"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="korean" id="5TH-KG-OUe">
-                                <rect key="frame" x="20" y="20" width="280" height="436"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="korean" translatesAutoresizingMaskIntoConstraints="NO" id="5TH-KG-OUe">
+                                <rect key="frame" x="16" y="20" width="288" height="419"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GVS-UH-mhr" firstAttribute="leading" secondItem="TqJ-Fd-9Ad" secondAttribute="trailing" constant="62" id="07v-qk-Keo"/>
+                            <constraint firstItem="5TH-KG-OUe" firstAttribute="leading" secondItem="R8a-AI-OJv" secondAttribute="leadingMargin" id="4p3-pS-Jo9"/>
+                            <constraint firstItem="dZZ-2t-XU4" firstAttribute="leading" secondItem="5TH-KG-OUe" secondAttribute="leading" id="Em5-cG-LSc"/>
+                            <constraint firstItem="TqJ-Fd-9Ad" firstAttribute="top" secondItem="GVS-UH-mhr" secondAttribute="top" id="K7E-cN-fN1"/>
+                            <constraint firstItem="dZZ-2t-XU4" firstAttribute="top" secondItem="TqJ-Fd-9Ad" secondAttribute="top" id="LDy-7o-6c6"/>
+                            <constraint firstItem="5TH-KG-OUe" firstAttribute="top" secondItem="SAg-r5-6No" secondAttribute="bottom" id="MrG-Yt-mgE"/>
+                            <constraint firstItem="dZZ-2t-XU4" firstAttribute="top" secondItem="5TH-KG-OUe" secondAttribute="bottom" constant="15" id="Nye-d2-WRr"/>
+                            <constraint firstItem="dZZ-2t-XU4" firstAttribute="bottom" secondItem="TqJ-Fd-9Ad" secondAttribute="bottom" id="TQS-bh-ot0"/>
+                            <constraint firstItem="KlJ-YS-3KG" firstAttribute="top" secondItem="dZZ-2t-XU4" secondAttribute="bottom" constant="15" id="WNk-a4-lHG"/>
+                            <constraint firstItem="TqJ-Fd-9Ad" firstAttribute="centerX" secondItem="R8a-AI-OJv" secondAttribute="centerX" id="usM-p5-qgv"/>
+                            <constraint firstItem="5TH-KG-OUe" firstAttribute="centerX" secondItem="TqJ-Fd-9Ad" secondAttribute="centerX" id="yiI-sP-Cd4"/>
+                            <constraint firstItem="TqJ-Fd-9Ad" firstAttribute="leading" secondItem="dZZ-2t-XU4" secondAttribute="trailing" constant="62" id="zbz-9z-65L"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="韩国" image="torii" id="D9r-TM-ghZ"/>
                     <connections>
@@ -161,13 +178,16 @@
         <scene sceneID="ae4-L6-frq">
             <objects>
                 <viewController id="lnE-Qc-S3b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gLo-l4-9C1"/>
+                        <viewControllerLayoutGuide type="bottom" id="d70-Nq-VDd"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qJa-oR-yse">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="japanese" id="M2i-Mk-3Rz">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="japanese" translatesAutoresizingMaskIntoConstraints="NO" id="M2i-Mk-3Rz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
